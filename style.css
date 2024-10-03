@@ -6,16 +6,25 @@ body {
 
 header {
     background-color: chocolate;
-    text-align: center; 
+    text-align: center;
 }
+
 .Logo {
     width: 50px;
     padding: 15px;
 }
 
+.active {
+    background-color: bisque;
+}
+
 .main-navigation {
     background-color: black;
     text-align: left;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .main-navigation a {
@@ -28,7 +37,8 @@ header {
 .main-navigation a:hover {
     cursor: pointer;
     background-color: aqua;
-    color: brown;
+    color: yellowgreen;
+    font-weight: bold;
 }
 
 footer {
