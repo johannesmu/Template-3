@@ -9,6 +9,10 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0px;
+}
+
 .Logo {
     width: 50px;
     padding: 15px;
@@ -20,6 +24,7 @@ header {
 
 .main-navigation {
     background-color: black;
+    display: flex;
     text-align: left;
     overflow: hidden;
     position: -webkit-sticky;
@@ -39,6 +44,45 @@ header {
     background-color: aqua;
     color: yellowgreen;
     font-weight: bold;
+}
+
+.dropbtn {
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: aqua;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: blueviolet;
+}
+
+.tea-content {
+    margin: 35px;
 }
 
 footer {
