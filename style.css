@@ -26,10 +26,10 @@ header h1 {
     background-color: black;
     display: flex;
     text-align: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    /* top: 0; */
 }
 
 .main-navigation a {
@@ -53,29 +53,39 @@ header h1 {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+}
+.dropdown > a::after {
+    content: "\25bc";
 }
 
 .dropdown-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    min-width: 160px;
+    min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    color: white;
+    background-color: aqua;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
 
-.dropdown-menu a {
+/* .dropdown-menu a {
     text-decoration: none;
     display: block;
     color: black;
-}
+} */
 
 .dropdown-menu a:hover {
     background-color: aqua;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    /* display: block; */
+    max-height: 300px;
 }
 .dropdown:hover .dropbtn {
     background-color: blueviolet;
